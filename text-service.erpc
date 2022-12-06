@@ -1,0 +1,13 @@
+/* Write a character to the LCD
+* PS C:\Users\Admin\Mbed Programs\text_erpc> .\erpcgen text-service.erpc
+  PS C:\Users\Admin\Mbed Programs\text_erpc> .\erpcgen -g py text-service.erpc
+* @param c The character to write to the display
+*/
+
+program text_lcd;
+interface TextLCDService
+{
+    enterChar(in uint8 c) -> void
+    location(in uint8 column, in uint8 row) -> void
+}
+

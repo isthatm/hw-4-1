@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     # Write character on the connected erpc server
     myNum = array('B',[49,50,51,52,53,54])
-    #myNum = ['L','E','M','I','N','H']
+    
     client.location(3,0)
     for i1 in range(0,2):
        client.enterChar(myNum[i1])
